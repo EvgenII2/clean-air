@@ -1,8 +1,17 @@
-# Title
-clean-air
-## Description
-Simple Webb-application for Company.
-## Website
-https://evgenii2.github.io/clean-air/
+## Название
+Вебсайт для компании по производству рециркуляторов
+
+## Описание
+Заготовка проекта одностраничного статического сайта типа **лендинг**.
+
+## Технологии
+Использованы: *html, css*.
+Сетки созданы с помощью _flex_.
+
 ## TODO
-Approve design
+Согласовать дизайн. 
+Добавить контент. 
+Использовать React.
+
+## Website
+https://evgenii2.github.io/how-to-learn/
