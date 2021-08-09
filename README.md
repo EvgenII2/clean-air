@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+## Название
+Вебсайт для компании по производству рециркуляторов
+
+## Описание
+Заготовка проекта одностраничного статического сайта типа **лендинг**.
+
+## Технологии
+Использованы: *html, css*.
+Сетки созданы с помощью _flex_.
+
+## TODO
+Согласовать дизайн. 
+Добавить контент. 
+Использовать React.
+
+## Website
+https://evgenii2.github.io/how-to-learn/
+>>>>>>> 15a758b1174a1e36cfe739cbe5086a35802d72b2
