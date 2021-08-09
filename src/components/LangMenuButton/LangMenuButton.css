@@ -1,0 +1,10 @@
+.lang-menu__button {
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
+.lang-menu__button_active {
+    text-decoration: none;
+    color: rgb(0, 137, 211);
+}

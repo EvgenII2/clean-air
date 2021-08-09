@@ -1,0 +1,29 @@
+.header {
+    font-family: '', Courier, monospace;
+    color: rgb(0, 137, 211);
+    background-image: url('../../images/air-cleaner-main.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 675px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header__description {
+    margin-top: 100px;
+    margin-left: 50%;
+    margin-right: 20px;
+}
+
+.header__subtitle {
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 50px;
+}
