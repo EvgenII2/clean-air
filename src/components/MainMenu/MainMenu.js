@@ -7,18 +7,17 @@ function MainMenu(props) {
 
     function getMenuItem() {
         return (
-            translation.mainMenu.map(item =>
-                <li class="menu__item">
-                    <a href={`#${item}`} class="menu__link">{item}</a>
+            translation.mainMenu.map((item, index) =>
+                <li className="menu__item" key={index}>
+                    <a href={`#${props.links[index]}`} className="menu__link">{item}</a>
                 </li >
             )
         );
     }
 
     return (
-        <ul class="section menu">
+        <ul className="section menu" key={translation.mainMenu}>
             {getMenuItem()}
-
         </ul>
     )
 }

@@ -6,3 +6,8 @@
     padding: 0;
     margin-top: 20px;
 }
+
+.lang-menu__separator {
+    margin: 0;
+    padding: 0;
+}

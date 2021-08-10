@@ -1,5 +1,6 @@
 import React from "react";
 import { TranslationContext } from "../../context/TranslationContext";
+import './SectionDescription.css'
 
 function SectionDescription(props) {
 
@@ -7,21 +8,23 @@ function SectionDescription(props) {
 
     function getDescription() {
         return (
-            translation.sectionDescText.map(paragraph =>
-                <li className="section__paragraph">{paragraph}</li>)
+            translation.sectionDescText.map((paragraph, index) =>
+                <li className="section-desc__paragraph" key={index}>{paragraph}</li>)
         )
     }
 
     return (
-        <>
-            <a name="desc" ></a>
-            <p className="section__description">{translation.sectionDescSubTitle}
+        <div className="section-desc">
+            <p id={props.link} className="section-desc__description">
+                {translation.sectionDescSubTitle}
             </p>
-            <h2 className="section__title">{translation.sectionDescTitle}</h2>
-            <ul className="section__text">
+            <h2 className="section-desc__title">
+                {translation.sectionDescTitle}
+            </h2>
+            <ul className="section-desc__text">
                 {getDescription()}
             </ul>
-        </>
+        </div>
     );
 }
 
