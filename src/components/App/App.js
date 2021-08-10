@@ -1,4 +1,3 @@
-import logo from '../../images/logo.svg';
 import Header from '../Header/Header';
 import './App.css';
 import { TranslationContext, translations } from '../../context/TranslationContext';
@@ -12,7 +11,7 @@ function App() {
     <div className="App">
       <TranslationContext.Provider value={translations[lang]}>
         <Header onLangSelect={setLang} />
-        <Main />
+        <Main lang={lang} />
       </TranslationContext.Provider>
     </div >
   );
