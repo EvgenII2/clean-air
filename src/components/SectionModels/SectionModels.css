@@ -1,0 +1,15 @@
+.section-models {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-models__title {}
+
+.section-models__tables {
+    margin: 0 auto;
+    list-style: none;
+   
+    padding: 0;
+}

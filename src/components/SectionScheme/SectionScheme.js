@@ -3,6 +3,7 @@ import schemeRus from "../../images/air-cleaner-scheme-rus.png"
 import schemeEng from "../../images/air-cleaner-scheme-eng.png"
 import './SectionScheme.css'
 import { TranslationContext } from "../../context/TranslationContext";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function SectionScheme(props) {
 
@@ -15,12 +16,10 @@ function SectionScheme(props) {
     }, [props.lang])
 
     return (
-        <div className="section-scheme">
-            <h2 id={props.link} className="section-scheme__title">
-                {translation.sectionSchemeTitle}
-            </h2>
-            <img className="section-scheme__image" src={scheme} />
-        </div>
+        <section className="section-scheme">
+            <SectionTitle link={props.link} title={translation.sectionSchemeTitle} />
+            <img className="section-scheme__image" src={scheme} alt={translation.sectionSchemeTitle} />
+        </section>
     )
 }
 
