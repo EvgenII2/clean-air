@@ -1,0 +1,18 @@
+.section-individuality {
+    background-image: url('../../images/air-cleaner-two-colors.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-individuality__title {
+    width: 20%;
+}
+
+.section-individuality__text {
+    width: 20%;
+}
