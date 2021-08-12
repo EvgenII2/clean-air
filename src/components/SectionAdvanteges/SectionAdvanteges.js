@@ -13,7 +13,7 @@ function SectionAdvanteges(props) {
         <section className="section-advantages">
             <SectionTitle link={props.link} title={translation.sectionAdvantagesTitle} />
             <ul className="section-advantages__grid">
-                {translation.sectionAdvantages.map((item, index) =>
+                {translation.sectionAdvantagesValues.map((item, index) =>
                     (<Advantage key={index} adv={item} />))}
             </ul>
             <SectionIndividuality />

@@ -18,7 +18,7 @@ function LangMenu(props) {
             <li className="lang-menu__item" >
                 <LangMenuButton value='ru' onLangSelect={handleLangSelect} text='ру' isActive={isActiveRu} />
             </li>
-            <li><p className="lang-menu__separator">|</p></li>
+            <li className="lang-menu__separator">|</li>
             <li className="lang-menu__item">
                 <LangMenuButton value='en' onLangSelect={handleLangSelect} text='en' isActive={isActiveEn} />
             </li>

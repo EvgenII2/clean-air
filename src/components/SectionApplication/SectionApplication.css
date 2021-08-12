@@ -1,0 +1,11 @@
+.section-application__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    padding: 0;
+}
+
+.section-application{
+    padding: 0 20px;
+}

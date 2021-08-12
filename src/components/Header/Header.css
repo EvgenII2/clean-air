@@ -27,3 +27,17 @@
     font-weight: 700;
     font-size: 50px;
 }
+
+@media (max-width: 840px) {
+    .header__title {        
+        font-size: 25px;
+    }
+    .header__subtitle {
+        font-size: 20px;
+    }
+    .header__description {
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

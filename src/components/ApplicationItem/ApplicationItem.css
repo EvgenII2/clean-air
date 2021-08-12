@@ -1,0 +1,13 @@
+.section-application__item {
+    max-width: 200px;
+    list-style: none;
+}
+
+.section-application__item-icon {
+    width: auto;
+    height: auto;
+}
+
+.section-application__item-title {
+    font-size: 20px;
+}

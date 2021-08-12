@@ -12,7 +12,7 @@ function SectionModels(props) {
         <section className="section-models">
             <SectionTitle link={props.link} title={translation.sectionModelsTitle} />
             <ul className="section-models__tables">
-                {translation.sectionModels.map((item, index) =>
+                {translation.sectionModelsValues.map((item, index) =>
                     (<ModelGrid key={index} model={item} />))}
             </ul>
         </section>
