@@ -14,7 +14,7 @@ function LangMenu(props) {
     }
 
     return (
-        <ul className="lang-menu">
+        <ul id='home' className="lang-menu">
             <li className="lang-menu__item" >
                 <LangMenuButton value='ru' onLangSelect={handleLangSelect} text='ру' isActive={isActiveRu} />
             </li>
