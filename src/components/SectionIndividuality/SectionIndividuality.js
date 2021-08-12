@@ -1,6 +1,6 @@
+import './SectionIndividuality.css';
 import React from 'react';
 import { TranslationContext } from '../../context/TranslationContext';
-import './SectionIndividuality.css';
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 function SectionIndividuality(props) {

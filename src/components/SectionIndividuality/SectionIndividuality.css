@@ -9,10 +9,23 @@
     align-items: center;
 }
 
-.section-individuality__title {
-    width: 20%;
+.section-individuality__text {
+    padding: 0 20px;
+    font-size: 20px;
 }
 
-.section-individuality__text {
-    width: 20%;
+@media (max-width: 840px) {
+    .section-individuality__text {
+        width: 60%;
+    }
+    .section-individuality {
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

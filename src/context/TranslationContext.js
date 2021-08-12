@@ -1,10 +1,17 @@
 import React from "react";
+import iconSportClub from '../images/icon-sportclube.png';
+import iconBeauty from '../images/icon-beauty.png';
+import iconCafe from '../images/icon-cafe.png';
+import iconHome from '../images/icon-home.png';
+import iconHotel from '../images/icon-hotel.png';
+import iconOffice from '../images/icon-office.png';
+import iconSchool from '../images/icon-school.png';
 
 export const TranslationContext = React.createContext();
 
 export const translations = {
     en: {
-        headerTitle: 'Bactericidal air recirculator',
+        headerTitle: 'UVC Air Purifier',
         headerSubTitle: 'Clean air without problems',
         sectionDescTitle: 'Principle of operation',
         sectionDescText: [
@@ -15,7 +22,7 @@ export const translations = {
         mainMenu: ['Description', 'Scheme', 'Advantages', 'Models', 'Parameters', 'Applications', 'Contacts'],
         sectionSchemeTitle: 'Air Purifier scheme',
         sectionAdvantagesTitle: 'ADVANTAGES OF AIR PURIFIER',
-        sectionAdvantages: [
+        sectionAdvantagesValues: [
             { title: 'OWN FULL CYCLE PRODUCTION', text: 'We have been manufacturing electronic ballasts for ultraviolet lamps since 2001 and now, using our knowledge and experience in this area, we release a “conscious” product.' },
             { title: 'SAFE OPERATION', text: 'Closed-type air purifier. It is used in rooms where there are people, pets, houseplants.' },
             { title: 'DOUBLE DUST CLEANING', text: 'The inlet airflow is double filtered with a Dust filter and a HEPA filter.' },
@@ -28,7 +35,7 @@ export const translations = {
         sectionIndividulityTitle: 'INDIVIDUALITY',
         sectionIndividulityText: 'The ability to apply a design / logo on the air purifier body, as well as change the color of the body itself, which allows you to form a single image of the com-pany, a positive image and brand recognition.',
         sectionModelsTitle: 'MODEL RANGE',
-        sectionModels: [
+        sectionModelsValues: [
             { title: 'Standart', control: 'Push-button control', models: [{ productivity: 'Productivity 100 m3/h (Disinfected area 40 m2)', lamps: 'Lamps 2 х HNS L36W 2G11' }, { productivity: 'Productivity 200 m3/h (Disinfected area 80 m2)', lamps: 'Lamps 2 х HNS L55W 2G11' }, { productivity: 'Productivity 300 m3/h (Disinfected area 120 m2)', lamps: 'Lamps 2 х HNS L95W 2G11' }] },
             { title: 'Advance', control: 'Control: display', models: [{ productivity: 'Productivity 100 m3/h (Disinfected area 40 m2)', lamps: 'Lamps 2 х HNS L36W 2G11' }, { productivity: 'Productivity 200 m3/h (Disinfected area 80 m2)', lamps: 'Lamps 2 х HNS L55W 2G11' }, { productivity: 'Productivity 300 m3/h (Disinfected area 120 m2)', lamps: 'Lamps 2 х HNS L95W 2G11' }] },
             { title: 'Smart', control: 'Control: display and Smart Home app', models: [{ productivity: 'Productivity 100 m3/h (Disinfected area 40 m2)', lamps: 'Lamps 2 х HNS L36W 2G11' }, { productivity: 'Productivity 200 m3/h (Disinfected area 80 m2)', lamps: 'Lamps 2 х HNS L55W 2G11' }, { productivity: 'Productivity 300 m3/h (Disinfected area 120 m2)', lamps: 'Lamps 2 х HNS L95W 2G11' }] }
@@ -45,7 +52,28 @@ export const translations = {
             { title: 'Dimensions (H x W x D)', value: '800х360х180 /930х360х180/930х360х180' },
             { title: 'Degree of protection against dust and moisture', value: 'IP20' },
             { title: 'Weight, kg, no more', value: '8 / 9/ 9' }
-        ]
+        ],
+        sectionApplicationTitle: 'APPLICATION',
+        sectionApplicationValues: [
+            { title: 'Residential apartments and houses', link: iconHome },
+            { title: 'Office rooms', link: iconOffice },
+            { title: 'Hotels', link: iconHotel },
+            { title: 'Bars, cafes, restaurants', link: iconCafe },
+            { title: 'Educational institutions: preschools, schools, universities, etc.', link: iconSchool },
+            { title: 'Beauty Salons', link: iconBeauty },
+            { title: 'Fitness clubs', link: iconSportClub }
+        ],
+        sectionContactsTitle: 'Contacts',
+        sectionContactsValue: {
+            title: '"PKF" PROMTRANSKOMPLEKT "',
+            city: 'St. Petersburg',
+            street: 'Nepokoronnykh avenu',
+            country: 'Russia',
+            number: '47',
+            index: '195220',
+            phone: '+7 (812) 458-85-33',
+            email: 'promtranskomplekt@gmail.com'
+        }
     },
     ru: {
         headerTitle: 'Бактерицидный рециркулятор',
@@ -60,7 +88,7 @@ export const translations = {
         mainMenu: ['Описание', 'Схема', 'Преимущества', 'Модели', 'Технические характеристики', 'Сферы применения', 'Контакты'],
         sectionSchemeTitle: 'Схема рециркулятора',
         sectionAdvantagesTitle: 'Преимущества',
-        sectionAdvantages: [
+        sectionAdvantagesValues: [
             { title: 'БЕЗОПАСНАЯ ЭКСПЛУАТАЦИЯ', text: 'Рециркулятор закрытого типа. Используется в помещениях, где находятся люди, домашние питомцы, комнатные растения.' },
             { title: 'СОБСТВЕННОЕ ПРОИЗВОДСТВО ПОЛНОГО ЦИКЛА', text: 'Мы разработали, и являемся поставщиком следующего оборудования: - транспортные световые линии вагонов метро, трамваев, троллейбусов, электро- и дизель-поездов; - источники питания для светодиодов; - светильники с ЭПРА для наружного и внутреннего освещения; - светильники с ЭПРА для тепличного освещения.' },
             { title: 'ДВОЙНАЯ ОЧИСТКА ОТ ПЫЛИ', text: 'Воздушный поток на входе подвергается двойной фильтрации с помощью пылевого фильтра и HEPA фильтра.' },
@@ -73,7 +101,7 @@ export const translations = {
         sectionIndividulityTitle: 'ИНДИВИДУАЛЬНОСТЬ',
         sectionIndividulityText: 'Возможность нанесения дизайна/логотипа на корпусе рециркулятора, а также изменения цвета самого корпуса, что позволяет формировать единый образ компании, положительный имидж и узнаваемость торговой марки.',
         sectionModelsTitle: 'МОДЕЛЬНЫЙ РЯД',
-        sectionModels: [
+        sectionModelsValues: [
             { title: 'Категория Standart', control: 'Управление: кнопочное', models: [{ productivity: 'Производительность 100 м3/ч (Обеззараживаемая площадь 40 м2)', lamps: 'Лампы 2 х HNS L36W 2G11' }, { productivity: 'Производительность 200 м3/ч (Обеззараживаемая площадь 80 м2)', lamps: 'Лампы 2 х HNS L55W 2G11' }, { productivity: 'Производительность 300 м3/ч (Обеззараживаемая площадь 120 м2)', lamps: 'Лампы 2 х HNS L95W 2G11' }] },
             { title: 'Категория Advance', control: 'Управление: дисплей', models: [{ productivity: 'Производительность 100 м3/ч (Обеззараживаемая площадь 40 м2)', lamps: 'Лампы 2 х HNS L36W 2G11' }, { productivity: 'Производительность 200 м3/ч (Обеззараживаемая площадь 80 м2)', lamps: 'Лампы 2 х HNS L55W 2G11' }, { productivity: 'Производительность 300 м3/ч (Обеззараживаемая площадь 120 м2)', lamps: 'Лампы 2 х HNS L95W 2G11' }] },
             { title: 'Категория Smart', control: 'Управление: дисплей и приложение Smart', models: [{ productivity: 'Производительность 100 м3/ч (Обеззараживаемая площадь 40 м2)', lamps: 'Лампы 2 х HNS L36W 2G11' }, { productivity: 'Производительность 200 м3/ч (Обеззараживаемая площадь 80 м2)', lamps: 'Лампы 2 х HNS L55W 2G11' }, { productivity: 'Производительность 300 м3/ч (Обеззараживаемая площадь 120 м2)', lamps: 'Лампы 2 х HNS L95W 2G11' }] },
@@ -90,6 +118,27 @@ export const translations = {
             { title: 'Класс защиты от поражения электрическим током', value: 'I' },
             { title: 'Габриты (ВхШхГ, мм)', value: '800х360х180 /930х360х180/930х360х180' },
             { title: 'Вес, кг, не более', value: '8 / 9/ 9' }
-        ]
-    },
+        ],
+        sectionApplicationTitle: 'СФЕРЫ ПРИМЕНЕНИЯ',
+        sectionApplicationValues: [
+            { title: 'Жилые квартиры и дома', link: iconHome },
+            { title: 'Офисные помещения', link: iconOffice },
+            { title: 'Гостиницы', link: iconHotel },
+            { title: 'Заведения общепита, кафе, рестораны', link: iconCafe },
+            { title: 'Детские учреждения, сады, школы', link: iconSchool },
+            { title: 'Салоны красоты', link: iconBeauty },
+            { title: 'Фитнес клубы', link: iconSportClub }
+        ],
+        sectionContactsTitle: 'Контакты',
+        sectionContactsValue: {
+            title: 'ООО "ПКФ "ПРОМТРАНСКОМПЛЕКТ"',
+            city: 'г.Санкт-Петербург',
+            street: 'пр. Непокорённых',
+            country: 'Россия',
+            number: '47',
+            index: '195220',
+            phone: '+7 (812) 458-85-33',
+            email: 'promtranskomplekt@gmail.com'
+        }
+    }
 };

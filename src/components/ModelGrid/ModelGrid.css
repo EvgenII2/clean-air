@@ -28,3 +28,16 @@
     padding: 10px;
     border: solid 2px rgb(0, 137, 211);
 }
+
+
+@media (max-width: 840px) {
+    .section-models__table {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-models__table {
+        font-size: 10px;
+    }
+}

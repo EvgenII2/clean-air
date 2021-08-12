@@ -33,3 +33,16 @@
     padding: 0;
     text-align: left;
 }
+
+@media (max-width: 840px) {
+    .section-params__param {
+        grid-template-columns: 50% auto;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-params__param {
+        font-size: 10px;
+    }
+}

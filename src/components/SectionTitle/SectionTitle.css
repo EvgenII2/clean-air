@@ -4,3 +4,15 @@
     text-underline-position: under;
     text-transform: uppercase;
 }
+
+@media (max-width: 840px) {
+    .section-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-title {
+        font-size: 15px;
+    }
+}
