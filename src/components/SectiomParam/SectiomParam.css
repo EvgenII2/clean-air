@@ -6,8 +6,6 @@
     align-items: center;
 }
 
-.section-params__title {}
-
 .section-params__subtitle {
     text-transform: lowercase;
 }
