@@ -11,12 +11,14 @@
 
 .section-individuality__text {
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 18px;
+    width: 40%;
 }
 
 @media (max-width: 840px) {
     .section-individuality__text {
-        width: 60%;
+        width: 80%;
+        font-size: 16px;
     }
     .section-individuality {
         background-image: none;

@@ -1,18 +1,19 @@
 .section-title {
     font-size: 30px;
-    text-decoration: overline underline;
+    text-decoration: underline;
     text-underline-position: under;
     text-transform: uppercase;
+    line-height: 1.5;
 }
 
 @media (max-width: 840px) {
     .section-title {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
 @media (max-width: 500px) {
     .section-title {
-        font-size: 15px;
+        font-size: 22px;
     }
 }

@@ -1,13 +1,33 @@
 .section-application__item {
-    max-width: 200px;
+    width: 200px;
     list-style: none;
 }
 
 .section-application__item-icon {
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
 .section-application__item-title {
     font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width:800px) {
+    .section-application__item {
+        width: 150px;
+    }
+    .section-application__item-title {
+        font-size: 18px;        
+    }
+}
+
+@media(max-width:500px) {
+    .section-application__item {
+        width: 100px;
+    }
+    .section-application__item-title {
+        font-size: 15px;        
+    }
 }

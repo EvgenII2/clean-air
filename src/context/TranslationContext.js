@@ -72,7 +72,11 @@ export const translations = {
             number: '47',
             index: '195220',
             phone: '+7 (812) 458-85-33',
-            email: 'promtranskomplekt@gmail.com'
+            email: 'promtranskomplekt@gmail.com',
+            addressTitle: 'address',
+            phoneTitle: 'phone',
+            indexTitle: 'index',
+            emailTitle: 'email'
         }
     },
     ru: {
@@ -138,7 +142,11 @@ export const translations = {
             number: '47',
             index: '195220',
             phone: '+7 (812) 458-85-33',
-            email: 'promtranskomplekt@gmail.com'
+            email: 'promtranskomplekt@gmail.com',
+            addressTitle: 'адрес',
+            phoneTitle: 'тел.',
+            indexTitle: 'индекс',
+            emailTitle: 'почта'
         }
     }
 };

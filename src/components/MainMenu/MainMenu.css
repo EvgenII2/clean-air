@@ -17,7 +17,7 @@
 .menu__links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -40,9 +40,14 @@
     padding: 10px 30px;
     font-size: 20px;
 }
-.menu__image{
+
+.menu__image {
     width: 30px;
     height: 30px;
+}
+
+.menu__links_visible {
+    display: flex;
 }
 
 @media (max-width: 840px) {
@@ -52,6 +57,9 @@
     .menu__links {
         display: none;
         flex-direction: column;
+    }
+    .menu__links_visible {
+        display: flex;
     }
     .menu_mobile {
         display: flex;

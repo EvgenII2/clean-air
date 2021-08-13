@@ -11,14 +11,13 @@ import './Main.css';
 
 function Main(props) {
 
-    const [links, setLinks] =
-        React.useState(['desc-anchor', 'scheme-anchor', 'advanteges-anchor', 'models-anchor', 'param-anchor', 'application-anchor', 'contacts-anchor']);
+    const links = ['desc-anchor', 'scheme-anchor', 'advanteges-anchor', 'models-anchor', 'param-anchor', 'application-anchor', 'contacts-anchor'];
 
     return (
         <main className="main">
             <MainMenu links={links} />
             <SectionDescription link={links[0]} />
-            <SectionScheme link={links[1]} lang={props.lang} />
+            <SectionScheme link={links[1]} lang={props.lang} onPhotoClick={props.onPhotoClick}/>
             <SectionAdvanteges link={links[2]} />
             <SectionModels link={links[3]} />
             <SectiomParam link={links[4]} />
