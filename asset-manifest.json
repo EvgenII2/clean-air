@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/clean-air/static/css/main.cba0a46f.chunk.css",
-    "main.js": "/clean-air/static/js/main.77945904.chunk.js",
-    "main.js.map": "/clean-air/static/js/main.77945904.chunk.js.map",
+    "main.css": "/clean-air/static/css/main.559448a4.chunk.css",
+    "main.js": "/clean-air/static/js/main.a0619240.chunk.js",
+    "main.js.map": "/clean-air/static/js/main.a0619240.chunk.js.map",
     "runtime-main.js": "/clean-air/static/js/runtime-main.6496ccfb.js",
     "runtime-main.js.map": "/clean-air/static/js/runtime-main.6496ccfb.js.map",
-    "static/js/2.cceff5b2.chunk.js": "/clean-air/static/js/2.cceff5b2.chunk.js",
-    "static/js/2.cceff5b2.chunk.js.map": "/clean-air/static/js/2.cceff5b2.chunk.js.map",
+    "static/js/2.76505813.chunk.js": "/clean-air/static/js/2.76505813.chunk.js",
+    "static/js/2.76505813.chunk.js.map": "/clean-air/static/js/2.76505813.chunk.js.map",
     "index.html": "/clean-air/index.html",
-    "static/css/main.cba0a46f.chunk.css.map": "/clean-air/static/css/main.cba0a46f.chunk.css.map",
-    "static/js/2.cceff5b2.chunk.js.LICENSE.txt": "/clean-air/static/js/2.cceff5b2.chunk.js.LICENSE.txt",
+    "static/css/main.559448a4.chunk.css.map": "/clean-air/static/css/main.559448a4.chunk.css.map",
+    "static/js/2.76505813.chunk.js.LICENSE.txt": "/clean-air/static/js/2.76505813.chunk.js.LICENSE.txt",
     "static/media/index.css": "/clean-air/static/media/NeoSansPro-Regular.df19488e.woff",
     "static/media/Header.css": "/clean-air/static/media/air-cleaner-main.fe19345d.jpg",
     "static/media/air-cleaner-scheme-eng.011b5585.png": "/clean-air/static/media/air-cleaner-scheme-eng.011b5585.png",
     "static/media/air-cleaner-scheme-rus.667c2fff.png": "/clean-air/static/media/air-cleaner-scheme-rus.667c2fff.png",
     "static/media/SectionIndividuality.css": "/clean-air/static/media/air-cleaner-two-colors.06e24d32.png",
+    "static/media/ImagePopup.css": "/clean-air/static/media/picture-for-btn-close-popup.44bb1e48.svg",
     "static/media/Main.css": "/clean-air/static/media/section-fone.85cd7e22.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6496ccfb.js",
-    "static/js/2.cceff5b2.chunk.js",
-    "static/css/main.cba0a46f.chunk.css",
-    "static/js/main.77945904.chunk.js"
+    "static/js/2.76505813.chunk.js",
+    "static/css/main.559448a4.chunk.css",
+    "static/js/main.a0619240.chunk.js"
   ]
 }
