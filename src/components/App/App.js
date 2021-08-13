@@ -8,9 +8,13 @@ import ImagePopup from '../ImagePopup/ImagePopup';
 
 function App() {
 
+
+
   const [lang, setLang] = React.useState('ru');
-  const [isImagePopupOpen, setIsImagePopupOpen] = React.useState(true);
   const [selectedPhoto, setSelectedPhoto] = React.useState(null);
+  console.log(window)
+
+  window.document.pageYOffset = 1000;
 
   React.useEffect(() => {
     document.doctype.nextSibling.lang = lang;
@@ -21,7 +25,6 @@ function App() {
   }
 
   function handlePhotoClick(photo) {
-    setIsImagePopupOpen(true);
     setSelectedPhoto(photo);
   }
 
@@ -31,7 +34,7 @@ function App() {
         <Header onLangSelect={setLang} />
         <Main lang={lang} onPhotoClick={handlePhotoClick} />
         <Footer />
-        <ImagePopup isOpen={isImagePopupOpen} photo={selectedPhoto} onClose={closePopup} />
+        <ImagePopup photo={selectedPhoto} onClose={closePopup} />
       </TranslationContext.Provider>
     </div >
   );
