@@ -10,7 +10,7 @@ function SectionContacts(props) {
     const translation = React.useContext(TranslationContext);
 
     return (
-        <div className="section-contacts">
+        <div id={props.link} className="section-contacts">
             <SectionTitle title={translation.sectionContactsTitle} />
             <div className="section-contacts__contacts-container">
                 <MapContainer />

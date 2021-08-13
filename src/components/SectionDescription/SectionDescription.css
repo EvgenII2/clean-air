@@ -1,4 +1,29 @@
 .section-desc {
-    padding-top: 40px;
+    padding: 40px 40px 0;
     margin-top: -40px;
+}
+
+.section-desc__description {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.section-desc__text {
+    font-size: 20px;
+    text-align: justify;
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-desc__paragraph {
+    padding-top: 15px;
+}
+
+@media (max-width: 400px) {
+    .section-desc__description {
+        font-size: 14px;
+    }
+    .section-desc__text {
+        font-size: 14px;
+    }
 }
