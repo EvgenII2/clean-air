@@ -12,15 +12,14 @@ function MainMenu(props) {
 
     function handleClick() {
         setIsMenuOpen(!isMenuOpen);
-        console.log(isMenuOpen);
     }
 
     return (
         <menu className="menu">
             <div className="menu_mobile">
-                <a href="#home" className="menu__icon-home">
+                <button className="menu__icon-home" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                     <img className="menu__image" src={iconHome} alt="icon home" />
-                </a>
+                </button>
                 <button className="menu__icon-burger" onClick={handleClick}>
                     <img className="menu__image" src={iconMenu} alt="icon menu" />
                 </button>

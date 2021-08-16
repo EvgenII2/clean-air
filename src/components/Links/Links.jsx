@@ -3,9 +3,17 @@ import './Links.css'
 function Links(props) {
 
     return (
-        <div className={props.isMenuOpen ? "menu__links menu__links_visible" : "menu__links"} onClick={props.onClick}>
+        <div className={props.isMenuOpen ? "menu__links menu__links_visible" : "menu__links"} >
             {props.linkList.map((item, index) =>
-                <a href={`#${props.links[index]}`} key={index} className="menu__link">{item}</a>)
+                <button key={index} className="menu__link" onClick={() => {
+                    const offset = document.querySelector(`menu`).offsetHeight;
+                    window.scrollBy({
+                        left: 0,
+                        top: (document.querySelector(`#${props.links[index]}`).getBoundingClientRect().top - offset)
+                        , behavior: "smooth"
+                    });
+                    props.onClick();
+                }}>{item} </button>)
             }
         </div>
     )

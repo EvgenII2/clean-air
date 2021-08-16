@@ -5,6 +5,7 @@
     font-size: 18px;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -28,17 +29,15 @@
 }
 
 .menu__icon-burger {
-    color: rgb(0, 137, 211);
     padding: 10px 30px;
-    font-size: 20px;
     background: none;
     border: none;
 }
 
 .menu__icon-home {
-    color: rgb(0, 137, 211);
+    background: none;
+    border: none;
     padding: 10px 30px;
-    font-size: 20px;
 }
 
 .menu__image {

@@ -1,20 +1,14 @@
 import Header from '../Header/Header';
 import './App.css';
 import { TranslationContext, translations } from '../../context/TranslationContext';
-import React, { useEffect } from 'react';
+import React from 'react';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import ImagePopup from '../ImagePopup/ImagePopup';
 
 function App() {
-
-
-
   const [lang, setLang] = React.useState('ru');
   const [selectedPhoto, setSelectedPhoto] = React.useState(null);
-  console.log(window)
-
-  window.document.pageYOffset = 1000;
 
   React.useEffect(() => {
     document.doctype.nextSibling.lang = lang;
