@@ -6,8 +6,6 @@ function ImagePopup(props) {
         e.preventDefault();
         if (e.target.classList.contains('overlay')) {
             props.onClose();
-            console.log(e.target.scrollY());
-            e.target.focus();
         }
 
     }

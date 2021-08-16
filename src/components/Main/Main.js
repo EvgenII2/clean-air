@@ -17,7 +17,7 @@ function Main(props) {
         <main className="main">
             <MainMenu links={links} />
             <SectionDescription link={links[0]} />
-            <SectionScheme link={links[1]} lang={props.lang} onPhotoClick={props.onPhotoClick}/>
+            <SectionScheme link={links[1]} lang={props.lang} onPhotoClick={props.onPhotoClick} />
             <SectionAdvanteges link={links[2]} />
             <SectionModels link={links[3]} />
             <SectiomParam link={links[4]} />
