@@ -24,7 +24,7 @@ function MainMenu(props) {
                     <img className="menu__image" src={iconMenu} alt="icon menu" />
                 </button>
             </div>
-            <Links links={props.links} isMenuOpen={isMenuOpen} linkList={translation.mainMenu} onClick={handleClick} />
+            <Links links={props.links} isMenuOpen={isMenuOpen} linkList={translation.mainMenu} handleClick={handleClick} />
         </menu>
     )
 }

@@ -8,7 +8,7 @@ import ImagePopup from '../ImagePopup/ImagePopup';
 
 function App() {
   const [lang, setLang] = React.useState('ru');
-  const [isScroll, setIsScroll] = React.useState(true);
+  const [isCanScroll, setIsCanScroll] = React.useState(true);
   const [selectedPhoto, setSelectedPhoto] = React.useState(null);
 
   React.useEffect(() => {
@@ -17,18 +17,18 @@ function App() {
   }, [lang]);
 
   React.useEffect(() => {
-    isScroll ?
+    isCanScroll ?
       window.document.body.style.overflow = 'auto' :
       window.document.body.style.overflow = 'hidden';
-  }, [isScroll]);
+  }, [isCanScroll]);
 
   function closePopup() {
-    setIsScroll(true);
+    setIsCanScroll(true);
     setSelectedPhoto(null);
   }
 
   function handlePhotoClick(photo) {
-    setIsScroll(false);
+    setIsCanScroll(false);
     setSelectedPhoto(photo);
   }
 
@@ -36,7 +36,7 @@ function App() {
     <div className="App">
       <TranslationContext.Provider value={translations[lang]}>
         <Header onLangSelect={setLang} />
-        <Main onScroll={setIsScroll} lang={lang} onPhotoClick={handlePhotoClick} />
+        <Main onScroll={setIsCanScroll} lang={lang} onPhotoClick={handlePhotoClick} />
         <Footer />
         <ImagePopup photo={selectedPhoto} onClose={closePopup} />
       </TranslationContext.Provider>
