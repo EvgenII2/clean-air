@@ -9,27 +9,28 @@ import SectionScheme from "../SectionScheme/SectionScheme";
 import SectionContacts from "../SectionContacts/SectionContacts";
 import "./Main.css";
 
-function Main({ toHeader, lang, onPhotoClick }) {
-  const links = [
-    "desc-anchor",
-    "scheme-anchor",
-    "advanteges-anchor",
-    "models-anchor",
-    "param-anchor",
-    "application-anchor",
-    "contacts-anchor",
-  ];
+function Main({
+  refDesc,
+  refScheme,
+  refAdvanteges,
+  refModels,
+  refParam,
+  refApplications,
+  refContacts,
+  lang,
+  onPhotoClick,
+}) {
+  console.log("refDesc", refDesc);
 
   return (
     <main className="main">
-      <MainMenu toHeader={toHeader} links={links} />
-      <SectionDescription link={links[0]} />
-      <SectionScheme link={links[1]} lang={lang} onPhotoClick={onPhotoClick} />
-      <SectionAdvanteges link={links[2]} />
-      <SectionModels link={links[3]} />
-      <SectiomParam link={links[4]} />
-      <SectionApplication link={links[5]} />
-      <SectionContacts link={links[6]} />
+      <SectionDescription ref={refDesc} />
+      <SectionScheme ref={refScheme} lang={lang} onPhotoClick={onPhotoClick} />
+      <SectionAdvanteges ref={refAdvanteges} />
+      <SectionModels ref={refModels} />
+      <SectiomParam ref={refParam} />
+      <SectionApplication ref={refApplications} />
+      <SectionContacts ref={refContacts} />
     </main>
   );
 }

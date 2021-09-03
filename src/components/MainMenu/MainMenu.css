@@ -1,69 +1,72 @@
 .menu {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-size: 18px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
+  font-family: 'NeoSansPro', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  min-height: 53px;
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu_mobile {
-    display: none;
+  display: none;
 }
 
 .menu__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .menu__link {
-    text-decoration: none;
-    margin: 5px 10px;
-    text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  text-align: center;
 }
 
 .menu__icon-burger {
-    padding: 10px 30px;
-    background: none;
-    border: none;
+  padding: 10px 30px;
+  background: none;
+  border: none;
 }
 
 .menu__icon-home {
-    background: none;
-    border: none;
-    padding: 10px 30px;
+  background: none;
+  border: none;
+  padding: 10px 30px;
 }
 
 .menu__image {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .menu__links_visible {
-    display: flex;
+  display: flex;
 }
 
 @media (max-width: 840px) {
-    .menu {
-        flex-direction: column;
-    }
-    .menu__links {
-        display: none;
-        flex-direction: column;
-    }
-    .menu__links_visible {
-        display: flex;
-    }
-    .menu_mobile {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+  .menu {
+    flex-direction: column;
+  }
+  .menu__links {
+    display: none;
+    flex-direction: column;
+  }
+  .menu__links_visible {
+    display: flex;
+  }
+  .menu_mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
